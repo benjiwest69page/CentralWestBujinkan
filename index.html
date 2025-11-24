@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Central West Bujinkan</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background:#222; color:#fff; padding:1rem; text-align:center; }
-    nav { background:#444; display:flex; justify-content:center; }
+    body { font-family: Arial, sans-serif; margin:0; background:#f4f4f4; color:#333; }
+    header { background:#222; color:#fff; padding:2rem; text-align:center; }
+    nav { background:#444; display:flex; justify-content:center; flex-wrap:wrap; }
     nav a { color:#fff; padding:1rem; text-decoration:none; }
     nav a:hover { background:#666; }
-    section { padding:2rem; }
+    section { padding:2rem; max-width:900px; margin:auto; }
     footer { background:#222; color:#fff; text-align:center; padding:1rem; }
-    .container { max-width:900px; margin:auto; }
+    h1, h2 { margin-bottom:0.5rem; }
+    ul { padding-left:1.2rem; }
+    form input, form textarea { width:100%; padding:0.5rem; margin-bottom:1rem; }
+    form button { padding:0.7rem 1.5rem; background:#222; color:#fff; border:none; cursor:pointer; }
+    form button:hover { background:#555; }
   </style>
 </head>
 <body>
   <header>
     <h1>Central West Bujinkan</h1>
-    <p>Martial Arts Training in the Central West</p>
+    <p>Traditional Martial Arts in the Central West</p>
   </header>
   <nav>
     <a href="#about">About</a>
     <a href="#classes">Classes</a>
+    <a href="#instructors">Instructors</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" class="container">
+  <section id="about">
     <h2>About Us</h2>
-    <p>Central West Bujinkan is dedicated to teaching authentic Bujinkan Ninjutsu and Samurai arts. 
-       We welcome beginners and experienced martial artists alike.</p>
+    <p>We teach authentic Bujinkan Ninjutsu and Samurai arts, blending tradition with modern training. 
+       Our dojo welcomes all skill levels and fosters discipline, respect, and personal growth.</p>
   </section>
 
-  <section id="classes" class="container">
-    <h2>Classes</h2>
+  <section id="classes">
+    <h2>Class Schedule</h2>
     <ul>
-      <li>Beginner Training – Mondays 6pm</li>
-      <li>Advanced Training – Wednesdays 7pm</li>
-      <li>Weapons Practice – Saturdays 10am</li>
+      <li>Beginner Training – Mondays 6:00 PM</li>
+      <li>Advanced Training – Wednesdays 7:00 PM</li>
+      <li>Weapons Practice – Saturdays 10:00 AM</li>
     </ul>
   </section>
 
-  <section id="contact" class="container">
+  <section id="instructors">
+    <h2>Instructors</h2>
+    <p><strong>Sensei Benjamin West</strong> – Head Instructor & Cybersecurity Officer. 
+       Combines martial discipline with strategic thinking and leadership. 
+       Dedicated to student development and dojo culture.</p>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
     <form>
-      <label>Name:</label><br>
-      <input type="text" name="name"><br><br>
-      <label>Email:</label><br>
-      <input type="email" name="email"><br><br>
-      <label>Message:</label><br>
-      <textarea name="message"></textarea><br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
       <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Central West Bujinkan</p>
+    <p>&copy; 2025 Central West Bujinkan | Hosted on GitHub Pages</p>
   </footer>
 </body>
 </html>
